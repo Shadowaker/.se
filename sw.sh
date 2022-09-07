@@ -2,3 +2,9 @@
 
 osascript -e \
 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'
+
+
+defaults -currentHost write -g KeyRepeat -int 2
+defaults -currentHost write -g InitialKeyRepeat -int 15
+defaults -currentHost write -g com.apple.swipescrolldirection -bool FALSE
+
